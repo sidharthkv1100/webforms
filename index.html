@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <link rel="stylesheet" href="styles.css">
+ <style>
+    h2 {
+        text-align: center;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #c46c09;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: palegoldenrod;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <h2><b>STUDENT REGISTRATION</b></h2>
+
+    <form action="action_page,php" method="post"> 
+        
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" required>
+        </div>
+
+        
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname">
+        </div>
+
+        
+        <label for="email">E-mail id:</label>
+        <input type="email" id="email" placeholder="abc@gmail.com" required>
+       
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="abc@12" required>
+
+        <label for="pno">phone Number:</label>
+        <input type="tel" id="pno" required>
+
+       <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="">Choose</option>
+    <option value="female">Female</option>
+    <option value="male">Male</option>
+    <option value="other">Other</option>
+  </select>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+       
+        <label for="pro">Profile photo</label>
+        <input type="file" id="pro">
+        
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
